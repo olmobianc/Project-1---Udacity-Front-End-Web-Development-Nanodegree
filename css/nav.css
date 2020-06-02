@@ -1,0 +1,33 @@
+/*NAVBAR*/
+#navbar-box {
+    display: flex;
+    grid-area: nav;
+    border: 2px solid red;
+}
+
+#header-box {
+    display: flex;
+    width: 100%;
+}
+
+.header-title {
+    letter-spacing: 1px;
+}
+
+.navbar-list {
+    display: flex;
+    list-style-type: none;
+    width: 100%;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.navbar-element {
+    font-size: 18px;
+    margin-right: 50px;
+}
+
+.navbar-link {
+    text-decoration: none;
+    color: black;
+}
