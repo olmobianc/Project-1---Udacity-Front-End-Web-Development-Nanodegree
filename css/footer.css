@@ -20,7 +20,12 @@
 }
 
 .social-element {
-    padding: 20px 50px 80px;
+    padding: 20px 50px 60px;
+}
+
+.social-link {
+    text-decoration: none;
+    color: white;
 }
 
 .copyright {

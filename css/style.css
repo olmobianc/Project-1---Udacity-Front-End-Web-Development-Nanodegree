@@ -16,7 +16,6 @@ body {
     "nav nav nav"
     "post-1 post-2 post-3"
     "ft ft ft";
-    border: 2px solid black;
 }
 
 /*MAIN*/
@@ -30,7 +29,7 @@ body {
     "left right";
     grid-area: post-2;
     background: #f4f4f4;
-    padding: 30px;
+    padding: 45px 45px 65px;
 }
 
 .intro {
@@ -44,7 +43,7 @@ body {
     grid-area: left;
     background-image: url("/images/black_hole_1.jpg");
     background-size: contain;
-    height: 210px;
+    height: 203px;
 }
 
 .right-post {
@@ -52,7 +51,7 @@ body {
     grid-area: right;
     background-image: url("/images/black_hole_2.jpg");
     background-size: contain;
-    height: 210px;
+    height: 203px;
 }
 
 .image-container {
@@ -63,4 +62,8 @@ body {
 .main-link {
     text-decoration: none;
     color: teal;
+}
+
+.box-title {
+    color: crimson;
 }
