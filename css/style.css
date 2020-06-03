@@ -3,37 +3,64 @@
 
 body {
     margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .container {
+    display: grid;
+    grid-template-columns: 0.5fr 1.5fr 0.5fr;
+    grid-template-rows: minmax(30px, auto);
+    grid-row-gap: 60px;
+    grid-column-gap: 0;
+    grid-template-areas:
+    "nav nav nav"
+    "post-1 post-2 post-3"
+    "ft ft ft";
+    border: 2px solid black;
+}
+
+/*MAIN*/
+.main-container{
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: minmax(30px, auto);
     grid-gap: 30px;
     grid-template-areas:
-    "nav nav"
-    "post-1 post-2"
-    "ft ft";
-    border: 2px solid black;
-}
-
-/*MAIN*/
-.main-container-1 {
-    padding: 10px 60px;
-    grid-area: post-1;
-}
-
-.main-container-2 {
-    padding: 10px 60px;
+    "top top"
+    "left right";
     grid-area: post-2;
+    background: #f4f4f4;
+    padding: 30px;
 }
 
-.sidebar-box {
+.intro {
     display: flex;
-    border: 2px solid blue;
+    grid-area: top;
+    text-align: center;
 }
 
-.content-box {
+.left-post {
     display: flex;
-    border: 2px solid green;
+    grid-area: left;
+    background-image: url("/images/black_hole_1.jpg");
+    background-size: contain;
+    height: 210px;
+}
+
+.right-post {
+    display: flex;
+    grid-area: right;
+    background-image: url("/images/black_hole_2.jpg");
+    background-size: contain;
+    height: 210px;
+}
+
+.image-container {
+    border: 3px solid #808080;;
+    padding: 15px;
+}
+
+.main-link {
+    text-decoration: none;
+    color: teal;
 }

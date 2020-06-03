@@ -2,7 +2,8 @@
 #navbar-box {
     display: flex;
     grid-area: nav;
-    border: 2px solid red;
+    background: #444;
+    color: white;
 }
 
 #header-box {
@@ -11,7 +12,8 @@
 }
 
 .header-title {
-    letter-spacing: 1px;
+    letter-spacing: 1.2px;
+    margin-left: 50px;
 }
 
 .navbar-list {
@@ -29,5 +31,5 @@
 
 .navbar-link {
     text-decoration: none;
-    color: black;
+    color: white;
 }

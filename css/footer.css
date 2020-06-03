@@ -1,6 +1,34 @@
 /*FOOTER*/
 #footer-box {
-    display: flex;
-    border: 2px solid grey;
+    background: #444;
     grid-area: ft;
+    color: white;
+}
+
+.footer-title {
+    text-align: center;
+    margin: 60px 0;
+    font-size: 24px;
+    letter-spacing: 2px;
+}
+
+.social-list {
+    display: flex;
+    justify-content: center;
+    color: white;
+    list-style-type: none;
+}
+
+.social-element {
+    padding: 20px 50px 80px;
+}
+
+.copyright {
+    text-align: center;
+    color: white;
+    font-size: 13px;
+    font-weight: 600;
+    background: #282828;
+    margin: 0;
+    padding: 15px;
 }
