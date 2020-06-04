@@ -58,7 +58,7 @@ body {
 }
 
 .image-container {
-    border: 3px solid #808080;;
+    border: 3px solid #808080;
     padding: 15px;
 }
 
@@ -82,7 +82,7 @@ body {
 }
 
 /*MOBILE*/
-@media(max-width:640px) {
+@media(max-width:755px) {
     .container {
         display: grid;
         grid-template-columns: 1fr;
@@ -110,10 +110,12 @@ body {
 
     .left-post {
         height: 260px;
+        background-repeat: round;
     }
 
     .right-post {
         height: 260px;
+        background-repeat: round;
     }
 
     .button {
@@ -122,6 +124,66 @@ body {
 }
 
 /*TABLET*/
-@media(min-width:641px) and (max-width:1025px) {
+@media(min-width:756px) and (max-width:1125px) {
+    .container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: minmax(30px, auto);
+        grid-gap: 20px;
+        grid-template-areas:
+        "nav nav"
+        "post-2 post-2"
+        "ft ft";
+    }
 
+    .main-container{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: minmax(30px, auto);
+        grid-gap: 10px;
+        grid-template-areas:
+        "top top"
+        "mid-l mid-r"
+        "bottom-l bottom-r"
+        ;
+        grid-area: post-2;
+        background: #f4f4f4;
+        padding: 20px 20px 50px;
+    }
+    
+    .left-post {
+        display: flex;
+        grid-area: mid-l;
+        background-image: url("/images/black_hole_1.jpg");
+        background-size: stretch;
+        background-repeat: no-repeat;
+        height: 203px;
+    }
+    
+    .right-post {
+        display: flex;
+        grid-area: bottom-l;
+        background-image: url("/images/black_hole_2.jpg");
+        background-size: stretch;
+        background-repeat: no-repeat;
+        height: 203px;
+    }
+
+    .left-post {
+        height: 260px;
+        background-repeat: no-repeat;
+    }
+
+    .right-post {
+        height: 260px;
+        background-repeat: no-repeat;
+    }
+
+    .image-container {
+        padding: 25px;
+    }
+
+    .box-title {
+        margin: 0;
+    }
 }
