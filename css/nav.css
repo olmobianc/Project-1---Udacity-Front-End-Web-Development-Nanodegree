@@ -35,7 +35,7 @@
 }
 
 /*MOBILE*/
-@media(max-width:755px) {
+@media(max-width:767px) {
     .navbar-element {
         font-size: 20px;
     }

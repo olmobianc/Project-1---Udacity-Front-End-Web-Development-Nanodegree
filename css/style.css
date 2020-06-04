@@ -48,6 +48,10 @@ body {
     height: 203px;
 }
 
+.left-post:hover {
+    opacity: 80%;
+}
+
 .right-post {
     display: flex;
     grid-area: right;
@@ -55,6 +59,10 @@ body {
     background-size: contain;
     background-repeat: no-repeat;
     height: 203px;
+}
+
+.right-post:hover {
+    opacity: 80%;
 }
 
 .image-container {
@@ -82,7 +90,7 @@ body {
 }
 
 /*MOBILE*/
-@media(max-width:755px) {
+@media(max-width:767px) {
     .container {
         display: grid;
         grid-template-columns: 1fr;
@@ -121,10 +129,14 @@ body {
     .button {
         width: 100%;
     }
+
+    .image-container {
+        margin-bottom: 30px;
+    }
 }
 
 /*TABLET*/
-@media(min-width:756px) and (max-width:1125px) {
+@media(min-width: 768px) and (max-width: 1100px) {
     .container {
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -181,9 +193,5 @@ body {
 
     .image-container {
         padding: 25px;
-    }
-
-    .box-title {
-        margin: 0;
     }
 }
