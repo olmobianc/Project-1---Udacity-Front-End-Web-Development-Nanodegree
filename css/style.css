@@ -1,5 +1,6 @@
 @import "nav.css";
 @import "footer.css";
+@import "blog.css";
 
 body {
     margin: 0;
@@ -43,6 +44,7 @@ body {
     grid-area: left;
     background-image: url("/images/black_hole_1.jpg");
     background-size: contain;
+    background-repeat: no-repeat;
     height: 203px;
 }
 
@@ -51,6 +53,7 @@ body {
     grid-area: right;
     background-image: url("/images/black_hole_2.jpg");
     background-size: contain;
+    background-repeat: no-repeat;
     height: 203px;
 }
 
@@ -61,9 +64,64 @@ body {
 
 .main-link {
     text-decoration: none;
-    color: teal;
+    color: white;
+}
+
+.button {
+  border: 2px solid black;
+  cursor: pointer;
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: bold;
+  background: #F7932D linear-gradient(251.42deg, #F7932D 9.99%, #FFC700 100%);
+  border-radius: 2px;
 }
 
 .box-title {
     color: crimson;
+}
+
+/*MOBILE*/
+@media(max-width:640px) {
+    .container {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: minmax(30px, auto);
+        grid-gap: 20px;
+        grid-template-areas:
+        "nav"
+        "post-2"
+        "ft";
+    }
+
+    .main-container{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: minmax(30px, auto);
+        grid-gap: 10px;
+        grid-template-areas:
+        "top"
+        "left"
+        "right";
+        grid-area: post-2;
+        background: #f4f4f4;
+        padding: 20px 20px 50px;
+    }
+
+    .left-post {
+        height: 260px;
+    }
+
+    .right-post {
+        height: 260px;
+    }
+
+    .button {
+        width: 100%;
+    }
+}
+
+/*TABLET*/
+@media(min-width:641px) and (max-width:1025px) {
+
 }

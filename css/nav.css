@@ -33,3 +33,10 @@
     text-decoration: none;
     color: white;
 }
+
+/*MOBILE*/
+@media(max-width:640px) {
+    .navbar-element {
+        font-size: 20px;
+    }
+}
