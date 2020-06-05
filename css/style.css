@@ -27,7 +27,8 @@ body {
     grid-gap: 30px;
     grid-template-areas:
     "top top"
-    "left right";
+    "left right"
+    "bottom bottom";
     grid-area: post-2;
     background: #f4f4f4;
     padding: 45px 45px 65px;
@@ -89,6 +90,50 @@ body {
     color: crimson;
 }
 
+/*CONTACT ME*/
+.contact-wrapper {
+    justify-content: center;
+    display: grid;
+    grid-area: bottom;
+    width: 100%;
+    margin-top: 60px;
+    padding-top: 20px;
+    border-top: 1px solid lightsteelblue;
+}
+
+.contact-me-title {
+    text-align: center;
+}
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 2px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+.submit-button-container {
+    padding-top: 20px;
+    text-align: center;
+}
+
+input[type=submit] {
+  padding: 10px 15px;
+  margin: 10px;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  line-height: 30px;
+  font-weight: bold;
+  background: #F7932D linear-gradient(251.42deg, #F7932D 9.99%, #FFC700 100%);
+  color: #000000;
+  border-radius: 2px;
+}
+
 /*MOBILE*/
 @media(max-width:767px) {
     .container {
@@ -110,7 +155,8 @@ body {
         grid-template-areas:
         "top"
         "left"
-        "right";
+        "right"
+        "bottom";
         grid-area: post-2;
         background: #f4f4f4;
         padding: 20px 20px 50px;
@@ -132,6 +178,16 @@ body {
 
     .image-container {
         margin-bottom: 30px;
+    }
+
+    .intro {
+        padding: 0 20px;
+    }
+
+    .submit-button {
+        width: 100%;
+        padding: 0 !important;
+        margin: 0 !important;
     }
 }
 
@@ -156,7 +212,7 @@ body {
         grid-template-areas:
         "top top"
         "mid-l mid-r"
-        "bottom-l bottom-r"
+        "bottom bottom"
         ;
         grid-area: post-2;
         background: #f4f4f4;

@@ -3,8 +3,7 @@
     <head>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-            <title>Home Page!</title>
-        <meta name="description" content="Example" />
+        <title>Home Page!</title>
         <!-- linking my own css file -->
         <link rel="stylesheet" href="css/style.css">
     </head>
@@ -15,7 +14,7 @@
             <!-- NAVBAR -->
             <nav id="navbar-box">
                 <header id="header-box">
-                    <h3 class="header-title">Black Holes That Could Eat Us Alive</h3>
+                    <h1 class="header-title">Black Holes That Could Eat Us Alive</h1>
                 </header>                    
                 <ul class="navbar-list">
                     <li class="navbar-element">
@@ -70,7 +69,35 @@
                     <div>
                         <button class="button"><a class="main-link" href="">Discover More</a></button>
                     </div>
-                </div>  
+                </div>
+
+                <!--CONTACT ME FORM-->
+                <div class="contact-wrapper">
+                    <form>
+                        <h2 class="contact-me-title">Contact Me</h2>
+                        <label for="name">Name</label>
+                        <input type="text" id="name">
+                  
+                        <label for="email">Email Address</label>
+                        <input type="text" id="email">
+                  
+                        <label for="country">Country</label>
+                        <select id="country" name="country">
+                            <option value="australia">Australia</option>
+                            <option value="canada">Canada</option>
+                            <option value="usa">USA</option>
+                        </select>
+                        
+                        <label for="country">Subject</label>
+                        <textarea id="subject" name="subject" placeholder="Write something.." style="height:150px"></textarea>
+                        
+                        <div class="submit-button-container">
+                            <input type="submit" class="submit-button" value="Submit">
+                        </div>
+
+                    </form>
+                </div>
+
             </div>
 
             <!--FOOTER-->
@@ -83,7 +110,7 @@
                         <a class="social-link" href=""><li class="social-element">Linkedln</li></a>
                     </ul>
                 </div>
-                <div>
+                <div class="copyright-container">
                     <p class="copyright">Developed by Olmo Biancardi</p>
                 </div>
             </footer>

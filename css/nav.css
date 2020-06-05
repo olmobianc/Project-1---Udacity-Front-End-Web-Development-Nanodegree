@@ -39,4 +39,16 @@
     .navbar-element {
         font-size: 20px;
     }
+
+    .header-title {
+        font-size: 16px !important;
+        margin-left: 20px;
+    }
+}
+
+/*TABLET*/
+@media(min-width: 768px) and (max-width: 1100px) {
+    .header-title {
+        margin-left: 80px;
+    }
 }

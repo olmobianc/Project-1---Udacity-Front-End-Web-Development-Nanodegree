@@ -47,6 +47,7 @@
 .bio {
     color: grey;
     line-height: 30px;
+    font-style: italic;
 }
 
 /*POST*/
@@ -63,6 +64,10 @@
     font-size: 18px;
     font-weight: 500;
     line-height: 30px;
+}
+
+.text-underlined {
+    text-decoration: underline;
 }
 
 /*MOBILE*/
